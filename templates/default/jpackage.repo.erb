@@ -8,7 +8,7 @@ enabled=1
 
 [jpackage-rhel-<%= node["jpackage"]["version"] %>]
 name=JPackage (free) for Red Hat Enterprise Linux $releasever
-mirrorlist=http://www.jpackage.org/mirrorlist.php?dist=redhat-el-$releasever&type=free&release=<%= node["jpackage"]["version"] %>
+mirrorlist=http://www.jpackage.org/mirrorlist.php?dist=redhat-el-<%=node["jpackage"]["version"]%>&type=free&release=<%= node["jpackage"]["version"] %>
 failovermethod=priority
 gpgcheck=1
 gpgkey=http://www.jpackage.org/jpackage.asc
@@ -34,7 +34,7 @@ enabled=1
 
 [jpackage-rhel-<%= node["jpackage"]["version"] %>-updates]
 name=JPackage (free) for Red Hat Enterprise Linux $releasever
-mirrorlist=http://www.jpackage.org/mirrorlist.php?dist=redhat-el-$releasever&type=free&release=<%= node["jpackage"]["version"] %>-updates
+mirrorlist=http://www.jpackage.org/mirrorlist.php?dist=redhat-el-<%=node["jpackage"]["version"]%>&type=free&release=<%= node["jpackage"]["version"] %>-updates
 failovermethod=priority
 gpgcheck=1
 gpgkey=http://www.jpackage.org/jpackage.asc
